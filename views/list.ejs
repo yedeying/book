@@ -1,0 +1,20 @@
+<%- include header %>
+<section class="content">
+  <% for (var i = 0; i < 10; i++) { %>
+  <div class="book-block clearfix">
+    <a href="/detail.html"><img src="/img/book.jpg" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">MacTalk·人生元编程</div>
+        </div>
+        <div class="author">【中国】池建强</div>
+        <div class="description">《MacTalk·人生元编程》是一本随笔文集，主要内容来自作者的微信公众平台</div>
+        <div class="price">￥ 32.00</div>
+      </div>
+    </a>
+  </div>
+  <%- i === 9 ? '' : '<hr class="section-seperate">' %>
+  <% } %>
+</section>
+<%- include footer %>
+<%- include tablist %>

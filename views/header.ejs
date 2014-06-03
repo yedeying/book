@@ -1,0 +1,47 @@
+<% var typeArray = {
+  'list': '书籍列表',
+  'recommand': '推荐书籍',
+  'special': '特价书籍',
+  'hot': '热门书籍',
+  'new': '最新小架',
+  'catagory': ''
+  },
+  cataArray = ["小说", "杂志", "两性情感", "经管", "计算机", "科学与自然", "文学", "少儿", "生活", "传记", "旅游", "成功励志", "历史", "政治与军事", "艺术", "社会科学", "法律", "教育", "青春与动漫", "外语", "资讯及其他", "原创文学"]; %>
+<header class="clearfix">
+  <div class="nav-list float-left">
+    <a href="javascript:void(0)">
+      <i class="fa fa-angle-left logo-fa"></i>
+    </a>
+  </div>
+  <div class="nav-list float-left nav-seperate">|</div>
+  <div class="nav-list float-left nav-title"><%= typeArray[type] ? typeArray[type] : cataArray[id - 1] %></div>
+  <div class="nav-list float-right">
+    <a href="/account" class="btn-user">
+      <i class="fa fa-user"></i>
+      <span class="icon-text">我的设置</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="/cart" class="btn-cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="icon-text">购物车</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="javascript:void(0)" class="btn-search">
+      <i class="fa fa-search"></i>
+      <span class="icon-text">搜索</span>
+    </a>
+  </div>
+</header>
+<div class="search-box">
+  <hr class="border-top">
+  <div class="search-wrap">
+    <div class="input-group">
+      <input class="form-control input-search" type="search" placeholder="book title, author or isbn">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-confirm-search" type="button">search</button>
+      </span>
+    </div>
+  </div>
+</div>
