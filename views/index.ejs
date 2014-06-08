@@ -10,8 +10,8 @@
     <div class="show-row clearfix">
     <% for (var j = 0; j < 3; j++) { %>
       <div class="show-block float-left">
-        <a class="link-detail" href="javascript:void(0)" data-id="1"><img src="/img/book.jpg" alt=""></a>
-        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="1">MacTalk·人生元编程</a></div>
+        <a class="link-detail" href="javascript:void(0)" data-id="<%= data.recommand[i*3+j].id %>"><img src="<%= data.recommand[i*3+j].img + '!e' %>" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="<%= data.recommand[i*3+j].id %>"><%= data.recommand[i*3+j].title %></a></div>
       </div>
     <% } %>
     </div>
@@ -29,8 +29,8 @@
     <div class="show-row clearfix">
     <% for (var j = 0; j < 3; j++) { %>
       <div class="show-block float-left">
-        <a class="link-detail" href="javascript:void(0)" data-id="1"><img src="/img/book.jpg" alt=""></a>
-        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="1">MacTalk·人生元编程</a></div>
+        <a class="link-detail" href="javascript:void(0)" data-id="<%= data['new'][i*3+j].id %>"><img src="<%= data['new'][i*3+j].img + '!e' %>" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="<%= data['new'][i*3+j].id %>"><%= data['new'][i*3+j].title %></a></div>
       </div>
     <% } %>
     </div>

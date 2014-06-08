@@ -12,45 +12,61 @@ router.get('/', function(req, res) {
 });
 
 /* GET list page */
-function renderList(str) {
-  var type = str;
-  function render(req, res) {
-    var p = new Page('list');
-    var id = 1;
-    if(req.params && req.params.id) id = req.params.id;
-    p.render({type: type, page: id}, function(err, data) {
-      if(err) throw err;
-      res.render('list', {type: str, data: data, page: id});
-    });
+(function(){
+  function renderList(str) {
+    var type = str;
+    function render(req, res) {
+      var p = new Page('list');
+      var page = 1;
+      if(req.params && req.params.page) page = req.params.page;
+      p.render({type: type, page: page}, function(err, data) {
+        if(err) throw err;
+        res.render('list', {type: str, data: data, page: page});
+      });
+    }
+    return render;
   }
-  return render;
-}
 
-router.get('/list', renderList('list'));
-router.get('/recommand', renderList('recommand'));
-router.get('/special', renderList('special'));
-router.get('/hot', renderList('hot'));
-router.get('/new', renderList('new'));
-router.get('/list/:id', renderList('list'));
-router.get('/recommand/:id', renderList('recommand'));
-router.get('/special/:id', renderList('special'));
-router.get('/hot/:id', renderList('hot'));
-router.get('/new/:id', renderList('new'));
+  router.get('/list', renderList('list'));
+  router.get('/recommand', renderList('recommand'));
+  router.get('/special', renderList('special'));
+  router.get('/hot', renderList('hot'));
+  router.get('/new', renderList('new'));
+  router.get('/list/:page', renderList('list'));
+  router.get('/recommand/:page', renderList('recommand'));
+  router.get('/special/:page', renderList('special'));
+  router.get('/hot/:page', renderList('hot'));
+  router.get('/new/:page', renderList('new'));
+})();
 
 /* GET catagory list page */
-function renderCatagoryList(req, res) {
-  var p = new Page('catagory');
-  p.render({id: req.params.id}, function(err, data) {
-    if(err) throw err;
-    res.render('catagory', {type: 'catagory'}, data: data);
-  });
-}
-router.get('/catagory/:id', renderCatagoryList);
-router.get('/catagory/:id/:page', renderCatagoryList);
+(function(){
+  function renderCatagoryList(req, res) {
+    var p = new Page('catagory');
+    var page = 1;
+    var id = 1;
+    if(req.params && req.params.id) id = req.params.id;
+    if(req.params && req.params.page) page = req.params.page;
+    p.render({type: 'catagory', page: page, id: id}, function(err, data) {
+      if(err) throw err;
+      res.render('list', {type: 'catagory', id: id, data: data, page: page});
+    });
+  }
+  router.get('/catagory/:id', renderCatagoryList);
+  router.get('/catagory/:id/:page', renderCatagoryList);
+})();
 
 /* GET detail page */
-router.get('/detail/:id', function(req, res) {
-  res.render('detail', {type: 'detail', id: req.params.id});
-});
+(function(){
+  router.get('/detail/:id', function(req, res) {
+    var p = new Page('detail');
+    var id = 0;
+    if(req.params && req.params.id) id = req.params.id;
+    p.render({type: 'detail', id: id}, function(err, data) {
+      if(err) throw err;
+      res.render('detail', {type: 'detail', id: id, data: data});
+    });
+  });
+})();
 
 module.exports = router;
