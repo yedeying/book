@@ -2,7 +2,8 @@
 <section class="content">
   <% for (var i = 0; i < data.list.length; i++) { %>
   <div class="book-block clearfix">
-    <a class="link-detail" href="javascript:void(0)" data-id="<%= data.list[i].id %>"><img src="<%= data.list[i].img + '!e' %>" alt="" class="float-left">
+    <a class="link-detail" href="javascript:void(0)" data-id="<%= data.list[i].id %>">
+      <img src="<%= data.list[i].img + '!e' %>" alt="" class="float-left">
       <div class="information-block">
         <div class="first-line">
           <div class="title float-left"><%= data.list[i].title %></div>

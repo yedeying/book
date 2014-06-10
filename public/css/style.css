@@ -12,8 +12,22 @@ ol {
 
 body {
   font-family: "Microsoft YaHei" !important;
-  margin-bottom: 70px;
   position: relative;
+}
+
+body.index,
+body.list,
+body.new,
+body.recommand,
+body.hot,
+body.special,
+body.catagory,
+body.cart {
+  margin-bottom: 53px;
+}
+
+body.login {
+  background: rgb(247,247,247);
 }
 
 body, html {
@@ -79,7 +93,7 @@ a {
 }
 
 .nav-list > a > .icon-text {
-  font-size: 8px;
+  font-size: 12px;
   margin: 0 6px;
 }
 
@@ -195,7 +209,7 @@ a {
   border-width: 2px;
 }
 
-footer {
+.footer {
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -203,16 +217,16 @@ footer {
   background: rgb(90,153,168);
 }
 
-footer .footer-item {
+.footer .footer-item {
   padding: 15px;
   width: 25%;
   text-align: center;
   font-weight: 2px;
-  font-size: 22px;
+  font-size: 16px;
   color: #fff;
 }
 
-footer .active {
+.footer .active {
   background: rgb(55,131,147);
 }
 
@@ -352,7 +366,7 @@ footer .active {
   margin-top: 5px;
   font-size: 12px;
   overflow: hidden;
-  max-height: 84px;
+  max-height: 2.58em;
 }
 
 /* ---- add for detail ---- */
@@ -517,4 +531,161 @@ footer .active {
 
 .inner-detail > .comment {
   left: 100%;
+}
+
+/* ------add for cart ------ */
+
+.book-in-cart {
+  padding: 20px;
+  padding-left: 10px;
+  position: relative;
+}
+
+/*.book-in-cart .check-box{*/
+  /*height: 1px;*/
+  /*position: relative;*/
+/*}*/
+
+.book-in-cart .check-box {
+  width: 28px;
+}
+
+.book-in-cart label {
+  position: absolute;
+  top: 0;
+  width: 19px;
+  text-align: center;
+  bottom: 0;
+  color: #fff;
+  margin: auto;
+  height: 19px;
+  cursor: pointer;
+  border: 1px solid #555;
+}
+
+.book-in-cart label:before {
+  font-family: FontAwesome;
+  line-height: 1;
+  content: "\f00c";
+  -webkit-font-smoothing: antialiased;
+  display: block;
+}
+
+.book-in-cart input:hover + label {
+  border: 2px solid rgb(56,121,217);
+}
+
+.book-in-cart input:checked + label {
+  border: 2px solid rgb(56,121,217);
+  background: rgb(56,121,217);
+}
+
+.book-in-cart input {
+  width: 28px;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+.book-in-cart img {
+  margin-left: 28px;
+  width: 20%;
+}
+
+.information-block-in-cart {
+  padding: 0 10px;
+  max-width: 70%;
+}
+
+.first-line {
+  height: 25px;
+}
+
+.book-in-cart {
+  position: relative;
+}
+
+.information-block-in-cart .title {
+  font-size: 14px;
+  max-width: 80%;
+  color: rgb(41,122,178);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.book-in-cart .price {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 14px;
+  color: rgb(41,122,178);
+}
+
+.information-block-in-cart .author {
+  color: rgb(185,185,185);
+  font-size: 12px;
+}
+
+.information-block-in-cart .description {
+  color: rgb(115,115,115);
+  margin-top: 5px;
+  font-size: 12px;
+  overflow: hidden;
+  max-height: 2.58em;
+}
+
+.cart-footer {
+  position: fixed;
+  border-top: 1px solid #aaa;
+  background: #fff;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+.cart-footer div {
+  padding: 15px;
+  font-weight: 2px;
+  font-size: 16px;
+}
+
+.cart-footer .sum-up {
+  width: 75%;
+}
+
+.cart-footer .balance {
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  background: rgb(255,187,155);
+}
+
+/* ------- add for login ------- */
+.login-section {
+  margin: 40px auto;
+  border: 2px rgb(200,200,200) solid;
+  width: 82%;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+.login-section input[type=text] {
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  background: rgb(1,126,255);
+  border-radius: 8px;
+  outline: none;
+  padding: 10px;
+  color: white;
+  border: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
