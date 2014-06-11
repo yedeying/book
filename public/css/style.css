@@ -11,7 +11,7 @@ ol {
 }
 
 body {
-  font-family: "Microsoft YaHei" !important;
+  font-family: "Microsoft YaHei", sans-serif !important;
   position: relative;
 }
 
@@ -23,7 +23,7 @@ body.hot,
 body.special,
 body.catagory,
 body.cart {
-  margin-bottom: 53px;
+  padding-bottom: 53px;
 }
 
 body.login {
@@ -369,6 +369,10 @@ a {
   max-height: 2.58em;
 }
 
+.pagination {
+  margin: 10px 0;
+}
+
 /* ---- add for detail ---- */
 
 .detail {
@@ -525,6 +529,16 @@ a {
   font-size: 16px;
 }
 
+.detail-section {
+  text-indent: 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.detail-brief {
+  font-size: 14px;
+}
+
 .inner-detail > .brief {
   left: 0;
 }
@@ -540,11 +554,6 @@ a {
   padding-left: 10px;
   position: relative;
 }
-
-/*.book-in-cart .check-box{*/
-  /*height: 1px;*/
-  /*position: relative;*/
-/*}*/
 
 .book-in-cart .check-box {
   width: 28px;
@@ -639,21 +648,34 @@ a {
 
 .cart-footer {
   position: fixed;
-  border-top: 1px solid #aaa;
   background: #fff;
   width: 100%;
   bottom: 0;
   margin: 0;
+  z-index: 555;
 }
 
-.cart-footer div {
+.cus-inform .title {
+  padding: 10px;
+  color: #fff;
+  background: rgb(90,153,168);
+}
+
+.cart-footer .sum-up,
+.cart-footer .balance {
   padding: 15px;
   font-weight: 2px;
   font-size: 16px;
 }
 
+.cart-footer .sum-up-block {
+  position: relative;
+}
+
 .cart-footer .sum-up {
   width: 75%;
+  border-top: 1px solid #aaa;
+  background: #fff;
 }
 
 .cart-footer .balance {
@@ -663,22 +685,85 @@ a {
   background: rgb(255,187,155);
 }
 
+.cus-inform {
+  padding-bottom: 10px;
+  position: fixed;
+  /*z-index: -1;*/
+  background: #fff;
+  width: 100%;
+  bottom: -273px;
+  -webkit-transition: bottom .5s;
+  -moz-transition: bottom .5s;
+  -ms-transition: bottom .5s;
+  -o-transition: bottom .5s;
+  transition: bottom .5s;
+}
+
+.inform-group {
+  margin: 10px 0;
+  padding: 0 10px;
+}
+
+.cus-inform .last {
+  margin: -10px 0 10px;
+}
+
+.inform-group > label {
+  margin: 7px 0;
+  width: 25%;
+  text-align: right;
+}
+
+.inform-group > input,
+.inform-group > .dropdown-group {
+  width: 60%;
+  margin-right: 10%;
+}
+
+.inform-group .btn-group {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.group-list {
+  max-height: 20em;
+  overflow: auto;
+}
+
+.submit-block {
+  padding: 0 10px;
+}
+
+.submit-all {
+  outline: 0;
+  background: rgb(56,121,217);
+  border: 0;
+  border-radius: 8px;
+  width: 60%;
+  color: #fff;
+  padding: 8px;
+  margin-left: 30%;
+}
+
 /* ------- add for login ------- */
 .login-section {
   margin: 40px auto;
-  border: 2px rgb(200,200,200) solid;
+  border: 1px rgb(200,200,200) solid;
   width: 82%;
   padding: 40px 30px;
   background: #fff;
   border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
 }
 
-.login-section input[type=text] {
+.login-section input {
   margin: auto;
   margin-bottom: 20px;
+  border-radius: 8px;
 }
 
-.btn-login {
+.btn-login,
+.btn-register {
   background: rgb(1,126,255);
   border-radius: 8px;
   outline: none;
@@ -688,4 +773,17 @@ a {
   display: block;
   width: 100%;
   margin-bottom: 10px;
+}
+
+.forget-block a {
+  color: rgb(237,108,0);
+}
+
+.register-section {
+  margin: 40px auto;
+  border: 2px rgb(200,200,200) solid;
+  width: 82%;
+  padding: 40px 30px;
+  background: #fff;
+  border-radius: 20px;
 }

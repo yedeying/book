@@ -5,9 +5,9 @@
     </a>
   </div>
   <div class="nav-list float-right">
-    <a href="/account" class="btn-user">
+    <a href="<%= isLogin ? '/account' : '/login' %>" class="btn-user">
       <i class="fa fa-user"></i>
-      <span class="icon-text">个人中心</span>
+      <span class="icon-text"><%= isLogin ? '个人中心' : '登录' %></span>
     </a>
   </div>
   <div class="nav-list float-right">

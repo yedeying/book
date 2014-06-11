@@ -7,6 +7,7 @@
   'detail': '书籍详情',
   'cart': '购物车',
   'login': '用户登录',
+  'register': '用户注册',
   'catagory': ''
   },
   cataArray = ["小说", "杂志", "两性情感", "经管", "计算机", "科学与自然", "文学", "少儿", "生活", "传记", "旅游", "成功励志", "历史", "政治与军事", "艺术", "社会科学", "法律", "教育", "青春与动漫", "外语", "资讯及其他", "原创文学"]; %>
@@ -18,7 +19,7 @@
   </div>
   <div class="nav-list float-left nav-seperate">|</div>
   <div class="nav-list float-left nav-title"><%= typeArray[type] ? typeArray[type] : cataArray[id - 1] %></div>
-  <% if(type !== 'login') { %>
+  <% if(type !== 'login' && type !== 'register') { %>
   <div class="nav-list float-right">
     <a href="<%= isLogin ? '/account' : '/login' %>" class="btn-user">
       <i class="fa fa-user"></i>
@@ -39,7 +40,7 @@
   </div>
   <% } %>
 </header>
-<% if(type !== 'login') { %>
+<% if(type !== 'login' && type !== 'register') { %>
 <div class="search-box">
   <hr class="border-top">
   <div class="search-wrap">

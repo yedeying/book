@@ -1,5 +1,8 @@
 <script src="/js/jquery.js"></script>
 <script src="/js/bootstrap.js"></script>
+<% if(type === 'cart') { %>
+<script src="/js/city.js"></script>
+<% } %>
 <script src="/js/common.js"></script>
 <% var script = type;
 ['list', 'recommand', 'special', 'hot', 'new', 'catagory'].forEach(function(li) {

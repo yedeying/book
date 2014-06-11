@@ -1,4 +1,5 @@
 <%- include header %>
+<%- include pagination %>
 <section class="content">
   <% for (var i = 0; i < data.list.length; i++) { %>
   <div class="book-block clearfix">
@@ -17,5 +18,6 @@
   <%- i === data.list.length - 1 ? '' : '<hr class="section-seperate">' %>
   <% } %>
 </section>
+<%- include pagination %>
 <%- include footer %>
 <%- include tablist %>

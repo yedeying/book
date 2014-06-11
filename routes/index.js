@@ -1,5 +1,6 @@
 var express = require('express');
 var Page = require('../module/Page');
+var setting = require('../setting');
 var router = express.Router();
 var isLogin = false;
 
@@ -24,6 +25,11 @@ router.get('/', function(req, res) {
       var p = new Page('list');
       var page = 1;
       if(req.params && req.params.page) page = req.params.page;
+      if(page < 1) {
+        res.redirect('/' + str + '/1');
+      } else if(page > parseInt(setting.counts / 4 / setting.defaultPage, 10)) {
+        res.redirect('/' + str + '/' + parseInt(setting.counts / 4 / setting.defaultPage, 10));
+      }
       p.render({
         type: type,
         page: page
@@ -32,19 +38,24 @@ router.get('/', function(req, res) {
         res.render('list', {
           isLogin: isLogin,
           type: str,
-          data: data,
-          page: page
+          data: data
         });
       });
     }
     return render;
   }
 
-  router.get('/list', renderList('list'));
-  router.get('/recommand', renderList('recommand'));
-  router.get('/special', renderList('special'));
-  router.get('/hot', renderList('hot'));
-  router.get('/new', renderList('new'));
+  function redirectPage(url) {
+    return function(req, res) {
+      res.redirect('/' + url + '/1');
+    }
+  }
+
+  router.get('/list', redirectPage('list'));
+  router.get('/recommand', redirectPage('recommand'));
+  router.get('/special', redirectPage('special'));
+  router.get('/hot', redirectPage('hot'));
+  router.get('/new', redirectPage('new'));
   router.get('/list/:page', renderList('list'));
   router.get('/recommand/:page', renderList('recommand'));
   router.get('/special/:page', renderList('special'));
@@ -60,6 +71,11 @@ router.get('/', function(req, res) {
     var id = 1;
     if(req.params && req.params.id) id = req.params.id;
     if(req.params && req.params.page) page = req.params.page;
+    if(page < 1) {
+      res.redirect('/catagory/' + id + '/1');
+    } else if(page > parseInt(setting.counts / setting.cataArray.length / setting.defaultPage, 10)) {
+      res.redirect('/catagory/' + id + '/' + parseInt(setting.counts / setting.cataArray.length / setting.defaultPage, 10));
+    }
     p.render({type: 'catagory',
       page: page,
       id: id
@@ -69,12 +85,13 @@ router.get('/', function(req, res) {
         isLogin: isLogin,
         type: 'catagory',
         id: id,
-        data: data,
-        page: page
+        data: data
       });
     });
   }
-  router.get('/catagory/:id', renderCatagoryList);
+  router.get('/catagory/:id', function(req, res) {
+    res.redirect('/catagory/' + req.params.id + '/1');
+  });
   router.get('/catagory/:id/:page', renderCatagoryList);
 })();
 
@@ -125,12 +142,18 @@ router.get('/', function(req, res) {
   });
 })();
 
-/* GET login page */
+/* GET login and register page */
 (function(){
   router.get('/login', function(req, res) {
     res.render('login', {
       isLogin: isLogin,
       type: 'login'
+    });
+  });
+  router.get('/register', function(req, res) {
+    res.render('register', {
+      isLogin: isLogin,
+      type: 'register'
     });
   });
 })();
