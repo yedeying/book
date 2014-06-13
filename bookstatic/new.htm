@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="catagory">
+<header class="clearfix">
+  <div class="nav-list float-left nav-back">
+    <a href="javascript:void(0)">
+      <i class="fa fa-angle-left logo-fa"></i>
+    </a>
+  </div>
+  <div class="nav-list float-left nav-seperate">|</div>
+  <div class="nav-list float-left nav-title">最新上架</div>
+  <div class="nav-list float-right">
+    <a href="./login.htm" class="btn-user">
+      <i class="fa fa-user"></i>
+      <span class="icon-text">登录</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="./cart.htm" class="btn-cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="icon-text">购物车</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="javascript:void(0)" class="btn-search">
+      <i class="fa fa-search"></i>
+      <span class="icon-text">搜索</span>
+    </a>
+  </div>
+</header>
+<div class="search-box">
+  <hr class="border-top">
+  <div class="search-wrap">
+    <div class="input-group">
+      <input class="form-control input-search" type="search" placeholder="book title, author or isbn">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-confirm-search" type="button">search</button>
+      </span>
+    </div>
+  </div>
+</div>
+<section style="text-align: center">
+  <ul class="pagination" id="1">
+    <li class="disabled"><a href="javascript:void(0)">«</a></li>
+      <li class="active"><a href="javascript:void(0)">1</a></li>
+      <li><a href="javascript:void(0)">2</a></li>
+      <li><a href="javascript:void(0)">3</a></li>
+      <li><a href="javascript:void(0)">4</a></li>
+      <li><a href="javascript:void(0)">5</a></li>
+    <li><a href="javascript:void(0)">»</a></li>
+  </ul>
+</section>
+<section class="content">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3887">
+      <img src="./img/L65BpnvxB1IhMo.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">疯狂奥术师</div>
+        </div>
+        <div class="author">天下亡魂</div>
+        <div class="description">他年轻时当过流氓强盗，殴打过天王老子，行侠仗义纨绔不羁，还怂恿过月神跳脱衣舞，灵魂意外穿越神界，从最弱的逐步成长为顶尖奥术师，并且赢得众多美女的青睐，傲视万千诸神</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3883">
+      <img src="./img/ocULs06nw8rfnI.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">天演成神</div>
+        </div>
+        <div class="author">三生万物</div>
+        <div class="description">他要金钱，要美女，要世界上一切的一切……</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3879">
+      <img src="./img/9KOwGJC1AozYUW.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">灵异第五科</div>
+        </div>
+        <div class="author">海鑫</div>
+        <div class="description">有很多的人都曾体验过感到不可思议的事情，不管是一个曾经感觉十分熟悉的梦，还是巧合的不能巧合的相遇，还是看见奇怪超出想象的某物而惊讶得说不出话来，那么很有可能，我们看到的是一些极不寻常的事情，——比如天空中一道怪异的光芒，或者是一尊会流泪的雕像</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3875">
+      <img src="./img/sGYRTmdEDHhWzD.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">解灵人</div>
+        </div>
+        <div class="author">两包烟</div>
+        <div class="description">世人只知道有赶尸人、阴阳师、通灵人的存在，可是很少有人知道“解灵人”是干什么的！</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3871">
+      <img src="./img/FO2YGXqkBoHuLL.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">蛊灵精怪</div>
+        </div>
+        <div class="author">飞飞语</div>
+        <div class="description">从小到大叶夏养过很多小动物，却没一个能够真正养成，甚至连乌龟都没能存活</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3867">
+      <img src="./img/q7kkG2jszitJIm.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">武傲天下</div>
+        </div>
+        <div class="author">8难</div>
+        <div class="description">一个神奇的鼎，带来一段不一样的人生</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3863">
+      <img src="./img/1wm3m5HzN2hmNZ.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">三国大骗子</div>
+        </div>
+        <div class="author">十十</div>
+        <div class="description">大爷也是纵横花丛数年，英俊逼人的名草，为何今天落得如此啊？</div>
+        <div class="price">￥ 20.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3859">
+      <img src="./img/qyHqzHBmPh5skF.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">虎狼</div>
+        </div>
+        <div class="author">灰熊猫</div>
+        <div class="description">挣扎到崇祯二十一年仍旧没有灭亡的明朝，拥有穿越者所建立的无敌军队，天下为何仍会烽烟四起？</div>
+        <div class="price">￥ 28.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3855">
+      <img src="./img/ni2mtn1i4PHGjz.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">妖晶记</div>
+        </div>
+        <div class="author">8难</div>
+        <div class="description">一颗天上飞落的神奇晶体……</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3851">
+      <img src="./img/7CdNsa1dDFzI4z.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">焚天</div>
+        </div>
+        <div class="author">流浪的蛤蟆</div>
+        <div class="description">洞中金蟾生两翼，鼎里龙虎喷云光</div>
+        <div class="price">￥ 22.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3847">
+      <img src="./img/FOlNtc1RwQlJSq.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">拍花子和俏女孩 2</div>
+        </div>
+        <div class="author">张辛欣</div>
+        <div class="description">还记得儿时的故事磁带吗？</div>
+        <div class="price">￥ 28.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3843">
+      <img src="./img/31YvN4MD4cL9wr.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">商业评论·幸福企业专辑</div>
+        </div>
+        <div class="author"></div>
+        <div class="description">2012年年底《商业评论》副主编柯恩采访了管理大师彼得•圣吉，彼得•圣吉告诉我们，中国应该追求比美国梦更好的梦想，在经济发展的同时，促进国民幸福</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3839">
+      <img src="./img/VbIQLbV7pkSV4T.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">失衡的巨龙</div>
+        </div>
+        <div class="author">傅勇</div>
+        <div class="description">房价高涨，出口占GDP比重过大，贸易顺差过高，储蓄率居高不下……</div>
+        <div class="price">￥ 38.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3835">
+      <img src="./img/ewKM9czzMZY0io.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">高盛帝国（下）</div>
+        </div>
+        <div class="author">【美】查尔斯·埃利斯</div>
+        <div class="description">中信集团总经理常振明，中国证监会研究中心主任祁斌，中国社会科学院副院长李扬，中信证券公司董事长王东明，中央财经大学校长王广谦联袂推荐</div>
+        <div class="price">￥ 42.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3831">
+      <img src="./img/rXHxIspfOIusPD.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">私募江湖</div>
+        </div>
+        <div class="author">仇晓慧</div>
+        <div class="description">从1984年新中国诞生第一只股票开始，私募便伴随中国资本市场一路走来，发芽、生根，直至风起云涌，江湖翻腾</div>
+        <div class="price">￥ 38.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3827">
+      <img src="./img/uLlk4zlS7wXi4c.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">天下没有怀才不遇这回事</div>
+        </div>
+        <div class="author">包益民</div>
+        <div class="description">方文山、蔡康永、潘石屹、蒋友柏、王伟忠、赖声川、朱锷、宋秩铭等联名鼎力推荐！</div>
+        <div class="price">￥ 26.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3823">
+      <img src="./img/KIFnuXS3F8tFUa.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">当中国统治世界</div>
+        </div>
+        <div class="author">【英】马丁·雅克</div>
+        <div class="description">探析中国现代性八大特征，把脉中国未来发展趋势</div>
+        <div class="price">￥ 39.00</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3819">
+      <img src="./img/jca6LVjkP1TVTO.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">鲁迅的胡子</div>
+        </div>
+        <div class="author"></div>
+        <div class="description">多看书多交朋友，多看出品必属精品</div>
+        <div class="price">￥ 3.80</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3815">
+      <img src="./img/2DnqSA5FLjBcvN.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">孟京辉先锋艺术档案</div>
+        </div>
+        <div class="author"></div>
+        <div class="description">多看书多交朋友，多看出品必属精品</div>
+        <div class="price">暂时缺货</div>
+      </div>
+    </a>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-block clearfix">
+    <a class="link-detail" href="javascript:void(0)" data-id="3811">
+      <img src="./img/a70To1gXJqUTVY.jpg!e" alt="" class="float-left">
+      <div class="information-block">
+        <div class="first-line">
+          <div class="title float-left">等待NEMO的日子</div>
+        </div>
+        <div class="author">蒋小黎</div>
+        <div class="description">一个异想天开、让人崩溃的准妈妈</div>
+        <div class="price">￥ 26.00</div>
+      </div>
+    </a>
+  </div>
+</section>
+<section style="text-align: center">
+  <ul class="pagination" id="1">
+    <li class="disabled"><a href="javascript:void(0)">«</a></li>
+    <li class="active"><a href="javascript:void(0)">1</a></li>
+    <li><a href="javascript:void(0)">2</a></li>
+    <li><a href="javascript:void(0)">3</a></li>
+    <li><a href="javascript:void(0)">4</a></li>
+    <li><a href="javascript:void(0)">5</a></li>
+    <li><a href="javascript:void(0)">»</a></li>
+  </ul>
+</section>
+<footer class="footer clearfix">
+  <a href="./recommand.htm"><div class="footer-item float-left">推荐</div></a>
+  <a href="./special.htm"><div class="footer-item float-left">特价</div></a>
+  <a href="./index.htm"><div class="footer-item home-icon float-left">首页</div></a>
+  <a href="./hot.htm"><div class="footer-item float-left">热门</div></a>
+  <a href="./new.htm"><div class="footer-item float-left active">最新</div></a>
+</footer>
+<div class="tablist-icon" style="top: 148px;"><i class="fa tablist-fa fa-th-list"></i></div>
+<div class="tablist" style="left: -132px;">
+<ul>
+  <li class="tablist-title"><i class="fa fa-th-list"></i> 全部分类</li>  
+  <li class="tablist-item"><a href="./catagory.htm">小说</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">杂志</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">两性情感</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">经管</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">计算机</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">科学与自然</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">文学</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">少儿</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">生活</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">传记</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">旅游</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">成功励志</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">历史</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">政治与军事</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">艺术</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">社会科学</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">法律</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">教育</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">青春与动漫</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">外语</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">资讯及其他</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">原创文学</a></li>  
+</ul>
+</div>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/list.js"></script>
+</body>
+</html>

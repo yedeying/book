@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="cart">
+<header class="clearfix">
+  <div class="nav-list float-left nav-back">
+    <a href="javascript:void(0)">
+      <i class="fa fa-angle-left logo-fa"></i>
+    </a>
+  </div>
+  <div class="nav-list float-left nav-seperate">|</div>
+  <div class="nav-list float-left nav-title">购物车</div>
+  <div class="nav-list float-right">
+    <a href="./login.htm" class="btn-user">
+      <i class="fa fa-user"></i>
+      <span class="icon-text">登录</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="./cart.htm" class="btn-cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="icon-text">购物车</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="javascript:void(0)" class="btn-search">
+      <i class="fa fa-search"></i>
+      <span class="icon-text">搜索</span>
+    </a>
+  </div>
+</header>
+<div class="search-box">
+  <hr class="border-top">
+  <div class="search-wrap">
+    <div class="input-group">
+      <input class="form-control input-search" type="search" placeholder="book title, author or isbn">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-confirm-search" type="button">search</button>
+      </span>
+    </div>
+  </div>
+</div>
+<section class="cart">
+  <div class="book-in-cart clearfix">
+    <div class="check-box float-left">
+      <input id="no-3886" data-price="28.00" type="checkbox">
+      <label for="no-3886"> </label>
+    </div>
+    <img src="./img/m2qt6PFjOoi8nG.jpg!e" alt="" class="float-left" data-id="3886">
+    <div class="information-block-in-cart float-left">
+      <div class="first-line">
+      <a class="link-detail" href="javascript:void(0)" data-id="3886">
+        <div class="title float-left">龙血奇兵</div>
+      </a>
+      </div>
+      <div class="author">咸湿</div>
+      <div class="description">“长城连绵万里，却代表了我们一贯的保守，何不走出去，直面整个天下！”</div>
+    </div>
+    <div class="price float-right">￥ 28.00</div>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-in-cart clearfix">
+    <div class="check-box float-left">
+      <input id="no-3878" data-price="25.00" type="checkbox">
+      <label for="no-3878"> </label>
+    </div>
+    <img src="./img/lmqy9BQwtczkxu.jpg!e" alt="" class="float-left" data-id="3878">
+    <div class="information-block-in-cart float-left">
+      <div class="first-line">
+      <a class="link-detail" href="javascript:void(0)" data-id="3878">
+        <div class="title float-left">重生纨绔</div>
+      </a>
+      </div>
+      <div class="author">藏天</div>
+      <div class="description">重生了，纪墨只想在每个风和日丽的日子，带上几个狗腿子，到处去调戏一下良家妇女，奈何生活却逼娼为良……</div>
+    </div>
+    <div class="price float-right">￥ 25.00</div>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-in-cart clearfix">
+    <div class="check-box float-left">
+      <input id="no-3870" data-price="25.00" type="checkbox">
+      <label for="no-3870"> </label>
+    </div>
+    <img src="./img/RiVQVOMV8OkboA.jpg!e" alt="" class="float-left" data-id="3870">
+    <div class="information-block-in-cart float-left">
+      <div class="first-line">
+      <a class="link-detail" href="javascript:void(0)" data-id="3870">
+        <div class="title float-left">重生之绝世猛男</div>
+      </a>
+      </div>
+      <div class="author">罗霸道</div>
+      <div class="description">李元霸本身就不是来自平凡的尘世？</div>
+    </div>
+    <div class="price float-right">￥ 25.00</div>
+  </div>
+  <hr class="section-seperate">
+  <div class="book-in-cart clearfix">
+    <div class="check-box float-left">
+      <input id="no-3862" data-price="40.00" type="checkbox">
+      <label for="no-3862"> </label>
+    </div>
+    <img src="./img/KMCFsB8mQq1d2a.jpg!e" alt="" class="float-left" data-id="3862">
+    <div class="information-block-in-cart float-left">
+      <div class="first-line">
+      <a class="link-detail" href="javascript:void(0)" data-id="3862">
+        <div class="title float-left">回到秦朝做剑仙</div>
+      </a>
+      </div>
+      <div class="author">红眸</div>
+      <div class="description">老子虽然只是一个流氓剑仙</div>
+    </div>
+    <div class="price float-right">￥ 40.00</div>
+  </div>
+  <hr class="section-seperate">
+</section>
+<div class="cus-inform">
+  <div class="title">请补全订单信息</div>
+  <div class="inform-group clearfix">
+    <label for="name">收件人姓名</label>
+    <input id="name" required="" class="form-control float-right name" type="text">
+  </div>
+  <div class="inform-group clearfix">
+    <label for="mobile">手机号码</label>
+    <input id="mobile" required="" class="form-control float-right mobile" type="tel">
+  </div>
+  <div class="inform-group clearfix">
+    <label for="postcode">邮政编码</label>
+    <input id="postcode" required="" class="form-control float-right postcode" type="text">
+  </div>
+  <div class="inform-group clearfix">
+    <label for="select" class="float-left">请选择省市</label>
+    <div class="dropdown-group float-right">
+      <div class="btn-group dropup">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="group-name">请选择</span> <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu group-list" role="menu"><li><a href="javascript:void(0)" data-no="0">请选择</a></li><li><a href="javascript:void(0)" data-no="1">北京</a></li><li><a href="javascript:void(0)" data-no="2">广东</a></li><li><a href="javascript:void(0)" data-no="3">上海</a></li><li><a href="javascript:void(0)" data-no="4">天津</a></li><li><a href="javascript:void(0)" data-no="5">重庆</a></li><li><a href="javascript:void(0)" data-no="6">辽宁</a></li><li><a href="javascript:void(0)" data-no="7">江苏</a></li><li><a href="javascript:void(0)" data-no="8">湖北</a></li><li><a href="javascript:void(0)" data-no="9">四川</a></li><li><a href="javascript:void(0)" data-no="10">陕西</a></li><li><a href="javascript:void(0)" data-no="11">河北</a></li><li><a href="javascript:void(0)" data-no="12">山西</a></li><li><a href="javascript:void(0)" data-no="13">河南</a></li><li><a href="javascript:void(0)" data-no="14">吉林</a></li><li><a href="javascript:void(0)" data-no="15">黑龙江</a></li><li><a href="javascript:void(0)" data-no="16">内蒙古</a></li><li><a href="javascript:void(0)" data-no="17">山东</a></li><li><a href="javascript:void(0)" data-no="18">安徽</a></li><li><a href="javascript:void(0)" data-no="19">浙江</a></li><li><a href="javascript:void(0)" data-no="20">福建</a></li><li><a href="javascript:void(0)" data-no="21">湖南</a></li><li><a href="javascript:void(0)" data-no="22">广西</a></li><li><a href="javascript:void(0)" data-no="23">江西</a></li><li><a href="javascript:void(0)" data-no="24">贵州</a></li><li><a href="javascript:void(0)" data-no="25">云南</a></li><li><a href="javascript:void(0)" data-no="26">西藏</a></li><li><a href="javascript:void(0)" data-no="27">海南</a></li><li><a href="javascript:void(0)" data-no="28">甘肃</a></li><li><a href="javascript:void(0)" data-no="29">宁夏</a></li><li><a href="javascript:void(0)" data-no="30">青海</a></li><li><a href="javascript:void(0)" data-no="31">新疆</a></li><li><a href="javascript:void(0)" data-no="32">香港</a></li><li><a href="javascript:void(0)" data-no="33">澳门</a></li><li><a href="javascript:void(0)" data-no="34">台湾</a></li><li><a href="javascript:void(0)" data-no="35">海外</a></li><li><a href="javascript:void(0)" data-no="36">其他</a></li></ul>
+      </div>
+      <div class="btn-group dropup" style="display: none;">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="group-name"> </span> <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu group-list" role="menu">
+        </ul>
+      </div>
+      <div class="btn-group dropup" style="display: none;">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+          <span class="group-name"> </span> <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu group-list" role="menu">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="inform-group last clearfix">
+    <label for="address">街道地址</label>
+    <input id="address" required="" class="form-control float-right address" type="text">
+  </div>
+  <div class="clearfix submit-block">
+    <button class="submit-all">提交订单</button>
+  </div>
+</div>
+<footer class="cart-footer clearfix">
+  <div class="sum-up-block clearfix">
+    <div class="sum-up float-left">总计：￥ <span>0.00</span></div>
+    <div class="balance float-left">结算(<span>0</span>)</div>
+  </div>
+</footer>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/city.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/cart.js"></script>
+</body></html>

@@ -1,0 +1,14 @@
+<section style="text-align: center">
+  <ul class="pagination" id="<%= data.page %>">
+    <li<%= data.page === 1 ? ' class=disabled' : '' %>><a href="<%= data.page === 1 ? 'javascript:void(0)' : data.page - 1 %>">&laquo;</a></li>
+    <%
+    var left = data.page - 2, right = data.page - 0 + 2;
+    if(left < 1) left = 1, right = left + 4;
+    if(right > data.maxPage) right = data.maxPage, left = right - 4;
+    %>
+    <% for(var i = left; i <= right; i++) { %>
+      <li<%= data.page === i ? ' class=active' : '' %>><a href="<%= i %>"><%= i %></a></li>
+    <% } %>
+    <li<%= data.page === data.maxPage ? ' class=disabled' : '' %>><a href="<%= data.page === data.maxPage ? 'javascript:void(0)' : data.page + 1 %>">&raquo;</a></li>
+  </ul>
+</section>

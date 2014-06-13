@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <title>Book Store</title>
+  <link rel="stylesheet" href="./css/font-awesome.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="index">
+  <header class="clearfix">
+  <div class="nav-list float-left">
+    <a href="javascript:void(0)">
+      <img class="logo" src="./img/logo.png" alt="">
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="./login.htm" class="btn-user">
+      <i class="fa fa-user"></i>
+      <span class="icon-text">登录</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="./cart.html" class="btn-cart">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="icon-text">购物车</span>
+    </a>
+  </div>
+  <div class="nav-list float-right">
+    <a href="javascript:void(0)" class="btn-search">
+      <i class="fa fa-search"></i>
+      <span class="icon-text">搜索</span>
+    </a>
+  </div>
+</header>
+<div class="search-box">
+  <hr class="border-top">
+  <div class="search-wrap">
+    <div class="input-group">
+      <input class="form-control input-search" type="search" placeholder="book title, author or isbn">
+      <span class="input-group-btn">
+        <button class="btn btn-default btn-confirm-search" type="button">search</button>
+      </span>
+    </div>
+  </div>
+</div>
+<section class="section-carousel">
+  <div id="carousel-banner" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-banner" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-banner" data-slide-to="1"></li>
+      <li data-target="#carousel-banner" data-slide-to="2"></li>
+      <li data-target="#carousel-banner" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="./img/banner-pic-1.jpg">
+      </div>
+      <div class="item">
+        <img src="./img/banner-pic-2.jpg">
+      </div>
+      <div class="item">
+        <img src="./img/banner-pic-3.jpg">
+      </div>
+      <div class="item">
+        <img src="./img/banner-pic-4.jpg">
+      </div>
+    </div>
+    <ul class="carousel-list">
+      <li data-target="#carousel-banner" data-slide-to="0" class="active">图片1</li>
+      <li data-target="#carousel-banner" data-slide-to="1">图片2</li>
+      <li data-target="#carousel-banner" data-slide-to="2">图片3</li>
+      <li data-target="#carousel-banner" data-slide-to="3">图片4</li>
+    </ul>
+  </div>
+</section>
+<section class="section-recommand">
+  <div class="title-block clearfix">
+    <h4 class="title float-left">精品推荐</h4>
+    <span class="more float-right"><a href="./recommand.htm">全部 <i class="fa fa-angle-right"></i></a></span>
+  </div>
+  <div class="section-inner">
+    <div class="show-row clearfix">
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3888"><img src="./img/ScqGVjrV0srGli.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3888">野蛮金刚</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3884"><img src="./img/hwgx2wk6NgS2xq.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3884">穿越之太乙仙隐</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3880"><img src="./img/IkYwuRw44qfkKY.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3880">恶魔毕业生</a></div>
+      </div>
+    </div>
+    <div class="show-row clearfix">
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3876"><img src="./img/VLf29NHvwoSnzI.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3876">异世之堕落天才</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3872"><img src="./img/0A6BD94TawLIxZ.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3872">金刚不死诀</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3868"><img src="./img/zXg1UvEyqmOPnn.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3868">猎天</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr class="section-seperate">
+<section class="section-new">
+  <div class="title-block clearfix">
+    <h4 class="title float-left">最新上架</h4>
+    <span class="more float-right"><a href="./new.htm">全部 <i class="fa fa-angle-right"></i></a></span>
+  </div>
+  <div class="section-inner">
+    <div class="show-row clearfix">
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3887"><img src="./img/L65BpnvxB1IhMo.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3887">疯狂奥术师</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3883"><img src="./img/ocULs06nw8rfnI.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3883">天演成神</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3879"><img src="./img/9KOwGJC1AozYUW.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3879">灵异第五科</a></div>
+      </div>
+    </div>
+    <div class="show-row clearfix">
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3875"><img src="./img/sGYRTmdEDHhWzD.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3875">解灵人</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3871"><img src="./img/FO2YGXqkBoHuLL.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3871">蛊灵精怪</a></div>
+      </div>
+      <div class="show-block float-left">
+        <a class="link-detail" href="javascript:void(0)" data-id="3867"><img src="./img/q7kkG2jszitJIm.jpg!e" alt=""></a>
+        <div class="show-title"><a class="link-detail" href="javascript:void(0)" data-id="3867">武傲天下</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer clearfix">
+  <a href="./recommand.htm"><div class="footer-item float-left">推荐</div></a>
+  <a href="./special.htm"><div class="footer-item float-left">特价</div></a>
+  <a href="./index.htm"><div class="footer-item home-icon float-left active">首页</div></a>
+  <a href="./hot.htm"><div class="footer-item float-left">热门</div></a>
+  <a href="./new.htm"><div class="footer-item float-left">最新</div></a>
+</footer>
+<div class="tablist-icon" style="top: 148px;"><i class="fa tablist-fa fa-th-list"></i></div>
+<div class="tablist" style="left: -132px;">
+<ul>
+  <li class="tablist-title"><i class="fa fa-th-list"></i> 全部分类</li>  
+  <li class="tablist-item"><a href="./catagory.htm">小说</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">杂志</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">两性情感</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">经管</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">计算机</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">科学与自然</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">文学</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">少儿</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">生活</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">传记</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">旅游</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">成功励志</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">历史</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">政治与军事</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">艺术</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">社会科学</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">法律</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">教育</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">青春与动漫</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">外语</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">资讯及其他</a></li>  
+  <li class="tablist-item"><a href="./catagory.htm">原创文学</a></li>  
+</ul>
+</div>
+<script src="./js/jquery.js"></script>
+<script src="./js/bootstrap.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+</body></html>
