@@ -82,8 +82,7 @@ a {
 }
 
 .nav-list > a > .logo {
-  font-size: 28px;
-  font-weight: bold;
+  max-height: 40px;
 }
 
 .nav-list > a > * {
@@ -219,7 +218,7 @@ a {
 
 .footer .footer-item {
   padding: 15px;
-  width: 25%;
+  width: 20%;
   text-align: center;
   font-weight: 2px;
   font-size: 16px;
